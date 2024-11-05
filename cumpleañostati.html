@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños Tati</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #5a5a5a;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para la mejor en duolingo kkkk</h1>
+
+ <!-- Reproductor de video de YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ei2-RjJDBHc?si=JK9FOTt7SUuCkhko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p>Cuando hagas click saldra un pensamiento sobre ti <3</p>
+    <button onclick="generateMessage()">Mostrar mensaje</button>
+    <p id="message"></p>
+
+    <script>
+        const messages = [
+            "Eres increíble",
+            "Gracias por estar en mi vida",
+            "Tu me haces sonreír :)",
+            "Recuerda lo especial que eres, para mi y el mundo",
+            "Sigue brillando",
+            "A ti se te perdonan los ghosteos",
+            "Eres una muy buena amiga tatisita",
+            "Tienes una sonrisa preciosa",
+            "Bonita as always",
+            "Eres un mapache chevere",
+            "Me divierto haciendo mercado contigo",
+            "Vas a lograr cosas increibles",
+            "Si te sale este mensaje me debes una galleta",
+            "Eu te quiero muito"
+        ];
+
+        function generateMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById("message").textContent = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>
